@@ -23,10 +23,7 @@ class index:
 
 class Classsify:
     def GET(self):
-        data =  web.input()
-        print(data.input)
-        # print(data.type)
-        print(u"Mình tìm thue nha tro o quan 11")
+        data =  web.input()                
         classify_rent = CategoryRent()       
         result = classify_rent.classify(data.input)
         return result
