@@ -4,7 +4,7 @@
 #
 
 import web
-from lib.classsify.category_rent import CategoryRent
+from lib.classsify.classsify_rent import ClasssifyRent
 import urllib
 
 try:
@@ -23,8 +23,8 @@ class index:
 
 class Classsify:
     def GET(self):
-        data =  web.input()                
-        classify_rent = CategoryRent()       
+        data =  web.input()
+        classify_rent = ClasssifyRent()
         result = classify_rent.classify(data.input)
         return result
 

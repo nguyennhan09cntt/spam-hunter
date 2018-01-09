@@ -7,4 +7,4 @@ from lib.utils import Utils
 
 JSON_FILE = Utils().get_full_path("data/plaintext/rent.json")
 OUT_FILE = Utils().get_full_path("data/categoty/rent.json")
-process_data = Utils().process_data_json(JSON_FILE, OUT_FILE)
+Utils().process_data_json(JSON_FILE, OUT_FILE)
